@@ -1,0 +1,119 @@
+.skills__container{
+    grid-template-columns: repeat(2,600px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+.skills__content{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.2rem;
+    width: auto;
+}
+.skills__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+.skills__box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+.skills__group{
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+.skills__data{
+    display: flex;
+    column-gap: 0.5rem;
+}
+.skills .bx-badge-check{
+    font-style: 1rem;
+    color: var(--var-title-color);
+}
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+.skills__level{
+    font-size: var(--tiny-font-size);
+}
+
+/* Alterar cores dos icones */
+.skills__icone{
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+/* Frontend */
+.html{
+    color: var(--cor-html);
+}
+.css{
+    color: var(--cor-css);
+}
+.js{
+    color: var(--cor-js);
+    background-color: black;
+}
+.tailwind{
+    color: var(--cor-tailwind);
+}
+
+.react{
+    color: var(--cor-react);
+}
+
+/* backend */
+
+.python{
+    color: var(--cor-python);
+}
+.r{
+    color: var(--cor-r);
+}
+.fastapi{
+    color: var(--cor-fastapi);
+}
+.mysql{
+    color: var(--cor-mysql);
+}
+.mongodb{
+    color: var(--cor-mongodb);
+}
+.firebase{
+    color: var(--cor-firebase);
+}
+
+.skills__mais-infomations{
+    font-size: 10px;
+    margin-top: 1.5rem;
+}
+
+/* ================================ BREAKPOINTS=================  */
+/* For large devices */
+@media screen and (max-width: 992px){
+    .skills__container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+}
+@media screen and (max-width: 576px){
+    .skills__container{
+        grid-template-columns: 1fr;
+    }
+    .skills__content{
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width: 390px){
+    .skills__box{
+        column-gap: 1.25rem;
+    }
+    .skills__name{
+        font-style: var(--small-font-size);
+    }
+}

@@ -1,0 +1,19 @@
+.conteudo__title{
+  font-size: 18px;
+  padding: 0rem 1rem;
+  margin-bottom: 1rem;
+}
+.conteudo__p1,
+.conteudo__p2{
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+.conteudo__aplications{
+  padding: 1rem 0rem;
+  font-size: 14px;
+}
+.conteudo__exemplo{
+  text-align: justify;
+}

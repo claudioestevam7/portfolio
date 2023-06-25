@@ -1,0 +1,233 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__logo,
+.nav_toggle {
+    /* color: var(--title-color); */
+    /* font-weight: var(--font-medium); */
+    color: #d32424;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 5rem;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    /* color: var(--title-color); */
+    font-weight: var(--font-mediun);
+    transition: .3s;
+}
+
+.nav__icon,
+.nav__close,
+.nav__toggle {
+    display: none;
+}
+
+/* Actiove link  */
+.active-link,
+.nav__link:hover {
+    color: rgb(202, 191, 41);
+}
+
+/*  change backgorund header */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.nav__language {
+    display: flex;
+    align-items: center;
+    margin-left: var(--mb-2);
+}
+
+.nav__language-icon {
+    width: 30px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 0 0.25rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(85, 163, 21);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 251, 0);
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: 0.7;
+}
+
+input:checked+.slider {
+    background-color: #d32424;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #ffffff;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    background-color: #ffffff;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.tema {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ================================ BREAKPOINTS=================  */
+@media screen and (max-width: 768px) {
+    .header {
+        top: initial;
+        bottom: 0;
+    }
+
+    .nav {
+        height: var(--header-height);
+    }
+
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        /* background-color: var(--body-color); */
+        /* background-color:#d32424; */
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        border-top: #8e9ab5 5px solid;
+        transition: .3s;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* show menu */
+    .show-menu {
+        bottom: 0;
+    }
+
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav__icon {
+        font-size: 1.5rem;
+    }
+
+    .nav__close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: .5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--title-color);
+    }
+
+    .nav__close:hover {
+        color: var(--title-color-dark);
+    }
+
+    .nav__toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle {
+        display: block;
+    }
+}
+
+
+
+
+/* For small devices */
+@media screen and (max-width: 390px) {
+    .nav__menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list {
+        column-gap: 2rem;
+    }
+
+    .active-link,
+    .nav__link:hover {
+        color: rgb(70, 108, 233);
+    }
+}

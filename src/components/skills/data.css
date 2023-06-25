@@ -1,0 +1,12 @@
+.data__container{
+  text-align: justify;
+}
+.data__header{
+  display: flex;
+  margin-bottom: 1rem;
+}
+.data__title{
+  margin-left: 2rem;
+  /* color: var(--title-color); */
+  font-size: var(--h2-font-size)
+}

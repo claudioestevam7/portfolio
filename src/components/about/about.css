@@ -1,0 +1,129 @@
+.about__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 2rem;
+}
+.about__img{
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+.about__info{
+    grid-template-columns: repeat(3,140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+.about__box{
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+.about__icon{
+    font-size: 1.5rem;
+    color: var(--title_color);
+    margin-bottom: var(--mb-0-5);
+}
+.about__title{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+.about__subtitle{
+    font-size: var(--tiny-font-size);
+}
+.about__description{
+    padding: 0 1rem 0 0;
+    margin-bottom: var(--mb-2-5);
+    text-align: justify;
+    line-height: 1.75rem;
+    font-size: var(--normal-font-size);
+}
+.about__button{
+    /* color: var(--title-color); */
+    font-style: var(--small-font-size);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.about__button:hover .services__button-icon{
+    transform: translateX(00.25rem);
+}
+.about__title-more{
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: var(--h2-font-size)
+}
+.about__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.about__modal-content{
+    width: 700px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+    text-align: justify;
+}
+.about__active-modal{
+    opacity: 1;
+    visibility: visible;
+}
+.about__more{
+    margin-bottom: 1rem;
+}
+
+/* ================================ BREAKPOINTS=================  */
+/* For large devices */
+@media screen and (max-width: 992px){
+    .about__container{
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    .about__img{
+        width: 220px;
+    }
+    .about__box{
+        padding: 0.75rem 0.5rem;
+    }
+    .about__data{
+        text-align: center;
+    }
+    .about__info{
+        justify-content: center;
+    }
+    .about__description{
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .about__info{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .about__description{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 390px){
+    .about__info{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

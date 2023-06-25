@@ -1,0 +1,29 @@
+.backend__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  
+}
+.backend__modal-content{
+  translate: 140px;
+  width: 700px;
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+.backend__active-modal{
+  opacity: 1;
+  visibility: visible;
+}
