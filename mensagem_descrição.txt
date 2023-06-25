@@ -1,7 +1,1 @@
-Olá, sou um programador full-stack com 1 ano de experiência em desenvolvimento de software. Possuo habilidades sólidas tanto no front-end quanto no back-end, incluindo a utilização de tecnologias como [HTML, CSS, JavaScript, React, Node.js, etc.].
-
-Como programador full-stack, tenho experiência em projetar, desenvolver e implementar soluções web completas, desde a camada de apresentação até a camada de banco de dados. Além disso, tenho uma compreensão profunda dos princípios de design responsivo e boas práticas de usabilidade, permitindo-me criar interfaces de usuário atraentes e fáceis de usar.
-
-Em meus projetos anteriores, tive a oportunidade de trabalhar em equipe com designers, engenheiros de software e gerentes de projetos para entregar soluções de alta qualidade ao cliente. Além disso, sou versado em ferramentas de desenvolvimento, como Git e metodologias ágeis, para garantir a entrega de projetos de forma eficiente e eficaz.
-
-Meu portfolio está disponível em [seu site ou perfil de rede social]. Gostaria de agradecer pela sua consideração e ficaria honrado em discutir como posso aplicar minhas habilidades e experiência para contribuir com a sua equipe. Obrigado.
+  eee
